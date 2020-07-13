@@ -87,18 +87,6 @@
 <img src="bluetooth - コピー - コピー.svg" width=20px height=20px>
 </div>
 
-<!-- <div class="window">
-<a href="#floatWindow" class="open">jQuery窓</a>
-</div>
-
-<div id="floatWindow">
-<a class="close">❌</a>
-<dl>
-  <dt>フローティングwindow</dt>
-  <dd>hello!hello!hello!hello!hello!hello!hello!</dd>
-</dl>
-</div> -->
-
 <p><a href="intro.html">たつみ紹介ページはこちら</a></p>
 
 </footer>     
@@ -112,36 +100,7 @@ $('.menu ul').slideToggle();
 });
 </script>
 
-<!-- <script>
-$(function(){
-$("a.open").click(function(){
-$("#floatWindow").fadeIn("fast");
-return false;
-});
 
-$("#floatWindow a.close").click(function(){
-$("#floatWindow").fadeOut("fast");
-return false;
-});
-
-$("#floatWindow dl dt").mousedown(function(e){
-$("#floatWindow")
-.date("clickPointX", e.pageX - $("#floatWindow")
-.offset().left)
-.date("clickPointY", e.pageY - $("#floatWindow")
-.offset().top);
-
-$(document).mousemove(function(e){
-$("#floatWindow").css({
-"top":e.pageY - $("#floatWindow").deta("clickPointY")+"px",
-"left":e.pageX - $("#floatWindow").deta("clickPointX")+"px",
-});
-});
-}).mouseup(function(e){
-$(document).off("mousemove");
-});
-});
-</script> -->
 <script src="./javascript/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -161,8 +120,7 @@ arrows:false
 });
 </script>
 
-<!-- <link rel="stylesheet" href="textillate-master/assets/style.css"> -->
-<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
 <script src="textillate-master/assets/jquery.fittext.js"></script>
 <link rel="stylesheet" href="textillate-master/assets/animate.css">
 <script src="textillate-master/jquery.textillate.js"></script>
@@ -176,17 +134,17 @@ initialdisplay:6000,
 autostart:false,
 loop:true,
 
-inEffects: [],	// エフェクト開始時のアニメーション設定
-outEffects: [ 'fadeOutLeftBig' ],	// エフェクト終了時のアニメーション設定
+inEffects: [],	
+outEffects: [ 'fadeOutLeftBig' ],	
 
 in: {
-effect: 'flip',	// エフェクトの指定
-delayScale: 3,	// 遅延時間の指数
-delay: 50,	// 文字ごとの遅延時間
-sync: false,	// アニメーションをすべての文字に同時に適用
-shuffle: false, // 文字のランダム表示
-reverse: false,	// エフェクトを逆に再生（「sync:true」のときは不可）
-callback: function () {}	// コールバック関数
+effect: 'flip',	
+delayScale: 3,	
+delay: 50,	
+sync: false,	
+shuffle: false, 
+reverse: false,	
+callback: function () {}	
 },
 
 out: {
