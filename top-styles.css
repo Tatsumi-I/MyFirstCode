@@ -203,7 +203,7 @@ footer p{
   flex-wrap: wrap;
 }
 
-@media(max-width:639px){
+@media(max-width:700px){
 .bgi{
   /* position:unset; */
   margin:auto;
